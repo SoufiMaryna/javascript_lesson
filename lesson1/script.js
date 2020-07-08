@@ -1,41 +1,20 @@
 'use strict';
-var LeftBorderWidth = 1;
-let second = 2;
-const p = 3.14;
-console.log(LeftBorderWidth);
-
-let persone  = {
-    name: "John",
-    age: 25,
-    isMarried: false
+let money = prompt("Your monthly budget ?", "");
+let time = prompt("Enter date in format YYYY-MM-DD ?", "");
+let appData  = {
+    budget: money,
+    timeData: time,
+    expenses:  {},
+    optionalExpenses:  {} ,
+    income :  [] ,
+    savings: false
 };
-console.log(persone.name);
-console.log(persone["name"]);
-let arr = ['plum.png', 'orange.jpg', 'apple.bmp'];
-console.log(arr[0]);
-alert("Hello!");
-let answer = confirm("Are you here?");
-console.log(answer);
+let a1 = prompt("Enter a required cost item this month ?", ""),
+    a2 = prompt("How much will it cost?", ""),
+    a3 = prompt("Enter a required cost item this month ?", ""),
+    a4 = prompt("How much will it cost?", "");
 
-let answery = prompt("Are you 18?", "Yes");
-console.log(answery);
-console.log(typeof(answery));
-console.log(typeof(arr));
-console.log("arr" + " - object");
+appData.expenses.a1 = a2;
+appData.expenses.a3 = a4;
 
-let incr = 10,
-    decr = 10;
-incr++;
-decr--;    
-console.log(incr);
-console.log(decr);
-console.log(5%2);
-console.log("2" == 2);
-console.log("2" === 2);
-
-let isCheked = true,
-    isClose = true;
-
-console.log(isCheked && isClose);   
-console.log(isCheked || isClose); 
-
+alert(appData.budget / 30);
